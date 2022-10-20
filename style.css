@@ -21,7 +21,7 @@ header {
 }
 header.sticky {
   padding: 10px 100px;
-  background-color: rgb(47, 46, 52);
+  background-color: rgba(47, 46, 52, 0.8);
 }
 header .brand {
   color: #fff;
@@ -43,7 +43,7 @@ header .navigation a {
   transition: 0.3s ease;
 }
 header .navigation a:hover {
-  color: rgb(4, 255, 4);
+  color: #0e9aa7;
 }
 section {
   padding: 100px;
@@ -55,13 +55,15 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(./img/Rectangle\ 31.png) no-repeat;
+  background: url(./img/background/pexels-neale-lasalle-631477.jpg) no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
 }
 .main .content {
   max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main .content h2 {
@@ -75,7 +77,7 @@ section {
   transition: 0.4s ease;
 }
 .main .content h2 span:hover {
-  color: rgba(255, 209, 3, 0.932);
+  cursor: pointer;
   font-weight: 600;
 }
 .animated-text {
@@ -84,7 +86,7 @@ section {
   position: relative;
 }
 .animated-text h3 {
-  color: rgb(0, 255, 0);
+  color: #0e9aa7;
   font-size: 52px;
   font-weight: 700;
   line-height: 70px;
@@ -112,7 +114,7 @@ section {
 }
 .btn {
   color: #fff;
-  background: rgb(3, 255, 3);
+  background: #0e9aa7;
   font-size: 17px;
   font-weight: 600;
   display: inline-block;
@@ -127,20 +129,22 @@ section {
   border-radius: 10px;
 }
 .btn:hover {
-  color: black;
-  background-color: #3214de;
+  color: #0e9aa7;
+  background-color: #fff;
 }
 .media-icons a {
   color: white;
   font-size: 30px;
-  margin-right: 40px;
   transition: 0.3s ease;
 }
 .media-icons a:hover {
-  color: rgb(3, 255, 3);
+  color: #0e9aa7;
 }
 .media-icons {
   margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
 .title {
@@ -152,7 +156,7 @@ section {
 }
 .section-title {
   position: relative;
-  color: rgb(3, 255, 3);
+  color: #0e9aa7;
   font-size: 38px;
   font-weight: 800;
   margin-bottom: 60px;
@@ -164,7 +168,7 @@ section {
   left: 50%;
   width: 140px;
   height: 4px;
-  background-color: rgb(3, 255, 3);
+  background-color: #0e9aa7;
   transform: translateX(-50%);
 }
 .section-title::after {
@@ -175,20 +179,20 @@ section {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: rgb(3, 255, 3);
+  background-color: #0e9aa7;
   transform: translateX(-50%);
 }
 .about .content {
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 .about .content .img-card {
   position: relative;
-  width: 100%;
-  min-height: 450px;
+  width: 500px;
+  min-height: 500px;
 }
 .about .content .img-card img {
   position: absolute;
@@ -196,8 +200,10 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
+  object-fit: contain;
+
+  border-radius: 100%;
+  box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.1);
 }
 
 .about .content .col-left {
@@ -268,24 +274,24 @@ section {
   border-radius: 2px;
 }
 .skills .html::before {
-  width: 85%;
+  width: 95%;
   background-color: #dd4b25;
 }
 .skills .css::before {
-  width: 75%;
+  width: 90%;
   background-color: #04aa6d;
 }
 .skills .javaScript::before {
-  width: 45%;
-  background-color: #efd81d;
-}
-.skills .react::before {
-  width: 55%;
+  width: 80%;
   background-color: #5ed3f3;
 }
+.skills .react::before {
+  width: 70%;
+  background-color: royalblue;
+}
 .skills .bootstrap::before {
-  width: 65%;
-  background-color: #7411f6;
+  width: 80%;
+  background-color: #efd81d;
 }
 .services .content {
   display: flex;
@@ -315,7 +321,7 @@ section {
 }
 
 .services .card .service-icon {
-  color: rgb(3, 255, 3);
+  color: #0e9aa7;
   font-size: 120px;
   text-align: center;
   transition: 0.5s ease;
@@ -331,13 +337,14 @@ section {
 }
 .work {
   background: #000016;
+  margin-top: -100px;
 }
 .work .content {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .work .content .card {
@@ -394,7 +401,7 @@ section {
 }
 
 .contact .card .contact-icon {
-  color: rgb(3, 255, 3);
+  color: #0e9aa7;
   font-size: 60px;
   text-align: center;
   transition: 0.4s ease;
@@ -452,7 +459,7 @@ section {
 
 .contact-form .input-box .send-btn {
   color: #fff;
-  background: rgb(3, 255, 3);
+  background: #0e9aa7;
   display: inline-block;
   font-size: 19px;
   font-weight: 500;
@@ -508,7 +515,7 @@ footer span {
   header .navigation.active {
     z-index: 888;
     position: fixed;
-    background-color: rgb(0, 255, 0);
+    background-color: #0e9aa7;
     top: 0;
     right: 0;
     width: 380px;
@@ -530,12 +537,12 @@ footer span {
   }
   header .navigation a:hover {
     background-color: #fff;
-    color: rgb(0, 255, 0);
+    color: #0e9aa7;
   }
 
   .menu-btn {
     position: absolute;
-    background: url(./img/menu-icon\\(2\).png.crdownload) no-repeat;
+    background: url(img/menu-btn.png) no-repeat;
     background-size: 30px;
     font-size: 20px;
     background-position: center;
@@ -605,9 +612,10 @@ footer span {
 
 .scrollTopBtn-btn {
   z-index: 999;
+  border-radius: 5px;
   position: fixed;
-  background-color: rgb(0, 255, 0);
-  color: rgb(50, 20, 222);
+  background-color: #0e9aa7;
+  color: white;
   width: 45px;
   height: 45px;
   bottom: 10px;
